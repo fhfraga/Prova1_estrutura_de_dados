@@ -1,9 +1,10 @@
 import random
+
 import numpy as np
 
 
 def ordenacao_bubble_sort(minimo, maximo, linha_matriz, coluna_matriz):
-     """Função para aplicação de ordenação bubble sort
+    """Função para aplicação de ordenação bubble sort
         Parameters
         ----------
         minimo: int
@@ -28,7 +29,8 @@ def ordenacao_bubble_sort(minimo, maximo, linha_matriz, coluna_matriz):
     for linha in range(len(matriz)):
         for coluna, valor in enumerate(matriz[linha]):
             lista.append(matriz[linha][coluna])
-            print(f'O número {valor} estava na posição: linha {linha} e coluna {coluna}')
+            print(
+                f'O número {valor} estava na posição: linha {linha} e coluna {coluna}')
     print('--------------------------------------------------------------------')
     for lista_invertida in range(len(lista) - 1, 0, -1):
         for posicao in range(lista_invertida):
